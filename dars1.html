@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <script defer src="https://kit.fontawesome.com/276ffb3fcd.js" crossorigin="anonymous"></script>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .navbar{
+        width: 100%;
+        height: 60px;
+        background-color: #333;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    .nav_menu{
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+        list-style-type:none;
+        align-items: center;
+    }
+
+    .search_wrapper{
+        width: 250px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+
+    .search_wrapper input{
+        flex: 1;
+        height: 100%;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        text-indent: 20px;
+    }
+    
+    .fa-search{
+        color: #333;
+        font-size: 22px;
+        margin-right: 5px;
+    }
+
+    </style>
+</head>
+<body>
+   <div class="navbar">
+      <h1>CodingNepal</h1>
+
+      <ul class="nav_menu">
+          <li>Home</li>
+          <li>About</li>
+          <li>Service</li>
+          <li>Contact</li>
+          <li>
+           <div class="search_wrapper"> 
+            <input type="text">
+            <i class="fa-solid fa-search"></i>
+
+
+           </div>
+        </li>
+      </ul>
+   </div>
+</body>
+</html>
